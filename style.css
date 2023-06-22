@@ -1,0 +1,147 @@
+body{
+	font-family: sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.doga{
+	background: url(img/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.A{
+	background: url(img/Abackground.jpg) no-repeat center center fixed;
+}
+
+.B{
+	background: url(img/Bbackground.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.C{
+	background: url(img/Cbackground.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.E{
+	background: url(img/Ebackground.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.F{
+	background: url(img/Fbackground.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+section{
+	margin-top: 8rem;
+}
+
+h3, h2, p{
+	text-align: center;
+}
+
+#aciklamalarBaslık > h2{
+	width: 300px;
+	border-radius: 0 25px 0 25px;
+	background-color: rgba(150, 232, 212, 0.5);
+	border-bottom: 3px solid rgb(61, 227, 202);
+	border-top: 3px solid rgb(61, 227, 202);
+}
+
+#aciklamalarBaslık{
+	display: flex;
+	justify-content: center;
+}
+
+li{
+	list-style: none;
+}
+
+.writing{
+	border-radius: 5px;
+	margin: 1rem;
+	padding: 0.5px;
+	background-color: rgba(250, 250, 250, 0.5);
+	text-align: left;
+}
+
+.note-p{
+	margin: 1rem;
+	text-align: left;
+}
+
+.navDiv{
+	border-radius: 20px;
+	border: 3px solid black;
+	background-color: white;
+}
+
+.navDiv p{
+	color: black;
+}
+
+h3{
+	border-radius: 10px 10px 0 0;
+	margin-left: 20px;
+	width: 100px;
+	background-color: rgba(179, 232, 212, 0.5);
+}
+
+.thanks strong{
+	color: rgb(250, 250, 250);
+	animation: yazırenklen 10s infinite;
+}
+
+#thanksForReading{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.thanks{
+	margin: 5px 5px 5px 5px;
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	background-color: rgb(0, 0, 0);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 3s;
+	animation: dairerenklen 10s infinite;
+}
+
+.thanks:hover{
+	transform: rotate(720deg);
+}
+
+
+
+
+
+/*Keyframes*/
+
+@keyframes dairerenklen{
+	0%, 100%{
+		background-color: black;
+	}
+	10%{
+		background-color: white;
+	}
+	90%{
+		background-color: black;
+	}
+}
+
+@keyframes yazırenklen{
+	0%, 100%{
+		color: white;
+	}
+	10%{
+		color: black;
+	}
+	90%{
+		color: white;
+	}
+}
