@@ -1,15 +1,20 @@
 body{
 	margin: 0;
-	/*background-color: #120042;*/
+	background-color: #120042;
+	background-image: -o-linear-gradient(20deg, #52006e 42%, #002a8c);
 	background-image: linear-gradient(70deg, #52006e 42%, #002a8c);
 }
 
 
 content{
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 
 }
 
@@ -31,6 +36,10 @@ header p{
 
 
 .button-align{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }

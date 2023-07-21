@@ -1,5 +1,5 @@
 body{
-	font-family: sans-serif;
+	font-family: monospace;
 	overflow-x: hidden;
 	margin: 0;
 }
@@ -50,8 +50,12 @@ h3, h2, p{
 }
 
 #aciklamalarBaslık{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 li{
@@ -90,13 +94,19 @@ h3{
 
 .thanks strong{
 	color: rgb(250, 250, 250);
-	animation: yazırenklen 10s infinite;
+	-webkit-animation: yazırenklen 10s infinite;
+	        animation: yazırenklen 10s infinite;
 }
 
 #thanksForReading{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .thanks{
@@ -105,15 +115,26 @@ h3{
 	height: 150px;
 	border-radius: 100px;
 	background-color: rgb(0, 0, 0);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-transition: all 3s;
+	-o-transition: all 3s;
 	transition: all 3s;
-	animation: dairerenklen 10s infinite;
+	-webkit-animation: dairerenklen 10s infinite;
+	        animation: dairerenklen 10s infinite;
 }
 
 .thanks:hover{
-	transform: rotate(720deg);
+	-webkit-transform: rotate(720deg);
+	    -ms-transform: rotate(720deg);
+	        transform: rotate(720deg);
 }
 
 
@@ -121,6 +142,18 @@ h3{
 
 
 /*Keyframes*/
+
+@-webkit-keyframes dairerenklen{
+	0%, 100%{
+		background-color: black;
+	}
+	10%{
+		background-color: white;
+	}
+	90%{
+		background-color: black;
+	}
+}
 
 @keyframes dairerenklen{
 	0%, 100%{
@@ -131,6 +164,18 @@ h3{
 	}
 	90%{
 		background-color: black;
+	}
+}
+
+@-webkit-keyframes yazırenklen{
+	0%, 100%{
+		color: white;
+	}
+	10%{
+		color: black;
+	}
+	90%{
+		color: white;
 	}
 }
 
